@@ -5,6 +5,21 @@
 		"factoryName": {
 			"value": "adf-demo-280425"
 		},
+		"AdventureWorksDb_password": {
+			"value": ""
+		},
+		"BlobStorageForProducts_connectionString": {
+			"value": ""
+		},
+		"AdventureWorksDb_properties_typeProperties_server": {
+			"value": "serveradf2804.database.windows.net"
+		},
+		"AdventureWorksDb_properties_typeProperties_database": {
+			"value": "Db-adf-2804"
+		},
+		"AdventureWorksDb_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		},
 		"containerUri": {
 			"value": ""
 		},
