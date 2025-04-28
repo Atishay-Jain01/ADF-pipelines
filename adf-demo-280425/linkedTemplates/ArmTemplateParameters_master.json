@@ -11,6 +11,9 @@
 		"BlobStorageForProducts_connectionString": {
 			"value": ""
 		},
+		"Blob storage for CustomerList_connectionString": {
+			"value": ""
+		},
 		"AdventureWorksDb_properties_typeProperties_server": {
 			"value": "serveradf2804.database.windows.net"
 		},
