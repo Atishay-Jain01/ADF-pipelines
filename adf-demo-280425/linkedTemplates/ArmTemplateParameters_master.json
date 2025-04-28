@@ -8,10 +8,10 @@
 		"AdventureWorksDb_password": {
 			"value": ""
 		},
-		"BlobStorageForProducts_connectionString": {
+		"Blob storage for CustomerList_connectionString": {
 			"value": ""
 		},
-		"Blob storage for CustomerList_connectionString": {
+		"BlobStorageForProducts_connectionString": {
 			"value": ""
 		},
 		"AdventureWorksDb_properties_typeProperties_server": {

@@ -11,13 +11,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AdventureWorksDb'"
 		},
-		"BlobStorageForProducts_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorageForProducts'"
-		},
 		"Blob storage for CustomerList_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'Blob storage for CustomerList'"
+		},
+		"BlobStorageForProducts_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'BlobStorageForProducts'"
 		},
 		"AdventureWorksDb_properties_typeProperties_server": {
 			"type": "string",
@@ -61,11 +61,11 @@
 					"AdventureWorksDb_password": {
 						"value": "[parameters('AdventureWorksDb_password')]"
 					},
-					"BlobStorageForProducts_connectionString": {
-						"value": "[parameters('BlobStorageForProducts_connectionString')]"
-					},
 					"Blob storage for CustomerList_connectionString": {
 						"value": "[parameters('Blob storage for CustomerList_connectionString')]"
+					},
+					"BlobStorageForProducts_connectionString": {
+						"value": "[parameters('BlobStorageForProducts_connectionString')]"
 					},
 					"AdventureWorksDb_properties_typeProperties_server": {
 						"value": "[parameters('AdventureWorksDb_properties_typeProperties_server')]"
