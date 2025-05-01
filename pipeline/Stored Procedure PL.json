@@ -70,6 +70,9 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateProducts]"
+				},
 				"linkedServiceName": {
 					"referenceName": "AdventureWorksDb",
 					"type": "LinkedServiceReference"
