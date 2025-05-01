@@ -40,7 +40,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ProductsTable",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				],
