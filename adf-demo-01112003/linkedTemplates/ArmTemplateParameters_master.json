@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-demo-01112003"
+		},
+		"AdventureWorksDb_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"Blob storage for CustomerList_connectionString": {
+			"value": ""
+		},
+		"BlobStorageForProducts_connectionString": {
+			"value": ""
+		},
+		"SqlDb_password": {
+			"value": ""
+		},
+		"AdventureWorksDb_properties_typeProperties_server": {
+			"value": "serveradf2804.database.windows.net"
+		},
+		"AdventureWorksDb_properties_typeProperties_database": {
+			"value": "Db-adf-2804"
+		},
+		"AdventureWorksDb_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		},
+		"SqlDb_properties_typeProperties_server": {
+			"value": "serveradfatishay.database.windows.net"
+		},
+		"SqlDb_properties_typeProperties_database": {
+			"value": "db-aj-010525"
+		},
+		"SqlDb_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
