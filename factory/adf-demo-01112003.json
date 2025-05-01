@@ -1,0 +1,9 @@
+{
+	"name": "adf-demo-01112003",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "afe9f000-714e-4968-bd2a-21991eff3442",
+		"tenantId": "7c2c734c-c7d5-4011-aa42-2e92378d364c"
+	}
+}
