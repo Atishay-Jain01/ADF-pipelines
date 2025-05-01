@@ -449,7 +449,7 @@
 							"storedProcedureName": "[[dbo].[UpdateProducts]"
 						},
 						"linkedServiceName": {
-							"referenceName": "AdventureWorksDb",
+							"referenceName": "AzureSqlDatabase1",
 							"type": "LinkedServiceReference"
 						}
 					},
@@ -471,7 +471,7 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/AzureSqlTable2')]",
 				"[concat(variables('factoryId'), '/datasets/productJson')]",
-				"[concat(variables('factoryId'), '/linkedServices/AdventureWorksDb')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase1')]"
 			]
 		},
 		{

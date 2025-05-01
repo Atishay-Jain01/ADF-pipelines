@@ -160,7 +160,7 @@
 							"storedProcedureName": "[[dbo].[UpdateProducts]"
 						},
 						"linkedServiceName": {
-							"referenceName": "AdventureWorksDb",
+							"referenceName": "AzureSqlDatabase1",
 							"type": "LinkedServiceReference"
 						}
 					},
