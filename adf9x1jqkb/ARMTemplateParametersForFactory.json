@@ -1,0 +1,78 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf9x1jqkb"
+		},
+		"AdventureWorksDb_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricks_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"Blob storage for CustomerList_connectionString": {
+			"value": ""
+		},
+		"BlobStorageForProducts_connectionString": {
+			"value": ""
+		},
+		"DLSTripData_accountKey": {
+			"value": ""
+		},
+		"SqlDb_password": {
+			"value": ""
+		},
+		"SqlDbTripData_password": {
+			"value": ""
+		},
+		"AdventureWorksDb_properties_typeProperties_server": {
+			"value": "serveradfatishay.database.windows.net"
+		},
+		"AdventureWorksDb_properties_typeProperties_database": {
+			"value": "db-aj-010525"
+		},
+		"AdventureWorksDb_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "serveradfatishay.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "db-aj-010525"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		},
+		"DLSTripData_properties_typeProperties_url": {
+			"value": "https://sa0205adls.dfs.core.windows.net/"
+		},
+		"SqlDb_properties_typeProperties_server": {
+			"value": "serveradfatishay.database.windows.net"
+		},
+		"SqlDb_properties_typeProperties_database": {
+			"value": "db-aj-010525"
+		},
+		"SqlDb_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		},
+		"SqlDbTripData_properties_typeProperties_server": {
+			"value": "serveradfatishay.database.windows.net"
+		},
+		"SqlDbTripData_properties_typeProperties_database": {
+			"value": "taxi-data"
+		},
+		"SqlDbTripData_properties_typeProperties_userName": {
+			"value": "AtishayJain"
+		}
+	}
+}

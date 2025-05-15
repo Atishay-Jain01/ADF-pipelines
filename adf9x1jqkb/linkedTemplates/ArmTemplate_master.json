@@ -1,0 +1,223 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "adf9x1jqkb"
+		},
+		"AdventureWorksDb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AdventureWorksDb'"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
+		"AzureBlobStorage2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
+		},
+		"AzureDatabricks_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks'"
+		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"Blob storage for CustomerList_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Blob storage for CustomerList'"
+		},
+		"BlobStorageForProducts_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'BlobStorageForProducts'"
+		},
+		"DLSTripData_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DLSTripData'"
+		},
+		"SqlDb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SqlDb'"
+		},
+		"SqlDbTripData_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SqlDbTripData'"
+		},
+		"AdventureWorksDb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "serveradfatishay.database.windows.net"
+		},
+		"AdventureWorksDb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db-aj-010525"
+		},
+		"AdventureWorksDb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AtishayJain"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "serveradfatishay.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db-aj-010525"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AtishayJain"
+		},
+		"DLSTripData_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sa0205adls.dfs.core.windows.net/"
+		},
+		"SqlDb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "serveradfatishay.database.windows.net"
+		},
+		"SqlDb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db-aj-010525"
+		},
+		"SqlDb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AtishayJain"
+		},
+		"SqlDbTripData_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "serveradfatishay.database.windows.net"
+		},
+		"SqlDbTripData_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "taxi-data"
+		},
+		"SqlDbTripData_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AtishayJain"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "adf9x1jqkb_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AdventureWorksDb_password": {
+						"value": "[parameters('AdventureWorksDb_password')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"AzureBlobStorage2_connectionString": {
+						"value": "[parameters('AzureBlobStorage2_connectionString')]"
+					},
+					"AzureDatabricks_accessToken": {
+						"value": "[parameters('AzureDatabricks_accessToken')]"
+					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"Blob storage for CustomerList_connectionString": {
+						"value": "[parameters('Blob storage for CustomerList_connectionString')]"
+					},
+					"BlobStorageForProducts_connectionString": {
+						"value": "[parameters('BlobStorageForProducts_connectionString')]"
+					},
+					"DLSTripData_accountKey": {
+						"value": "[parameters('DLSTripData_accountKey')]"
+					},
+					"SqlDb_password": {
+						"value": "[parameters('SqlDb_password')]"
+					},
+					"SqlDbTripData_password": {
+						"value": "[parameters('SqlDbTripData_password')]"
+					},
+					"AdventureWorksDb_properties_typeProperties_server": {
+						"value": "[parameters('AdventureWorksDb_properties_typeProperties_server')]"
+					},
+					"AdventureWorksDb_properties_typeProperties_database": {
+						"value": "[parameters('AdventureWorksDb_properties_typeProperties_database')]"
+					},
+					"AdventureWorksDb_properties_typeProperties_userName": {
+						"value": "[parameters('AdventureWorksDb_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"DLSTripData_properties_typeProperties_url": {
+						"value": "[parameters('DLSTripData_properties_typeProperties_url')]"
+					},
+					"SqlDb_properties_typeProperties_server": {
+						"value": "[parameters('SqlDb_properties_typeProperties_server')]"
+					},
+					"SqlDb_properties_typeProperties_database": {
+						"value": "[parameters('SqlDb_properties_typeProperties_database')]"
+					},
+					"SqlDb_properties_typeProperties_userName": {
+						"value": "[parameters('SqlDb_properties_typeProperties_userName')]"
+					},
+					"SqlDbTripData_properties_typeProperties_server": {
+						"value": "[parameters('SqlDbTripData_properties_typeProperties_server')]"
+					},
+					"SqlDbTripData_properties_typeProperties_database": {
+						"value": "[parameters('SqlDbTripData_properties_typeProperties_database')]"
+					},
+					"SqlDbTripData_properties_typeProperties_userName": {
+						"value": "[parameters('SqlDbTripData_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "adf9x1jqkb_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'adf9x1jqkb_ArmTemplate_0')]"
+			]
+		}
+	]
+}
