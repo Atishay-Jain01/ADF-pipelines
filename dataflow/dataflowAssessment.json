@@ -1,0 +1,75 @@
+{
+	"name": "dataflowAssessment",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "JSONfileBlob",
+						"type": "DatasetReference"
+					},
+					"name": "assessmentdatasource"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "JSONsinkderived",
+						"type": "DatasetReference"
+					},
+					"name": "assessmentSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "derivedColumnAssessment"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          price as string,",
+				"          area as string,",
+				"          bedrooms as string,",
+				"          bathrooms as string,",
+				"          stories as string,",
+				"          mainroad as string,",
+				"          guestroom as string,",
+				"          basement as string,",
+				"          hotwaterheating as string,",
+				"          airconditioning as string,",
+				"          parking as string,",
+				"          prefarea as string,",
+				"          furnishingstatus as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     documentForm: 'documentPerLine') ~> assessmentdatasource",
+				"assessmentdatasource derive(ingestDate = currentUTC()) ~> derivedColumnAssessment",
+				"derivedColumnAssessment sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          price as string,",
+				"          area as string,",
+				"          bedrooms as string,",
+				"          bathrooms as string,",
+				"          stories as string,",
+				"          mainroad as string,",
+				"          guestroom as string,",
+				"          basement as string,",
+				"          hotwaterheating as string,",
+				"          airconditioning as string,",
+				"          parking as string,",
+				"          prefarea as string,",
+				"          furnishingstatus as string",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> assessmentSink"
+			]
+		}
+	}
+}

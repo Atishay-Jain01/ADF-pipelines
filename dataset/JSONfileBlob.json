@@ -1,0 +1,63 @@
+{
+	"name": "JSONfileBlob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_assessment_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "house-price.json",
+				"folderPath": "json",
+				"fileSystem": "raw-zone"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"price": {
+					"type": "string"
+				},
+				"area": {
+					"type": "string"
+				},
+				"bedrooms": {
+					"type": "string"
+				},
+				"bathrooms": {
+					"type": "string"
+				},
+				"stories": {
+					"type": "string"
+				},
+				"mainroad": {
+					"type": "string"
+				},
+				"guestroom": {
+					"type": "string"
+				},
+				"basement": {
+					"type": "string"
+				},
+				"hotwaterheating": {
+					"type": "string"
+				},
+				"airconditioning": {
+					"type": "string"
+				},
+				"parking": {
+					"type": "string"
+				},
+				"prefarea": {
+					"type": "string"
+				},
+				"furnishingstatus": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
